@@ -12,8 +12,11 @@
 		1C14B09820021847008B87CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C14B09620021847008B87CB /* Main.storyboard */; };
 		1C14B09A20021847008B87CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C14B09920021847008B87CB /* Assets.xcassets */; };
 		1C14B09D20021847008B87CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C14B09B20021847008B87CB /* LaunchScreen.storyboard */; };
-		1C14B0A820021847008B87CB /* SeafoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14B0A720021847008B87CB /* SeafoodTests.swift */; };
-		1C14B0B320021847008B87CB /* SeafoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14B0B220021847008B87CB /* SeafoodUITests.swift */; };
+		1C14B0C1200218D9008B87CB /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14B0C0200218D9008B87CB /* Food.swift */; };
+		1C14B0C720022149008B87CB /* AddFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14B0C620022149008B87CB /* AddFoodTableViewController.swift */; };
+		1C14B0C9200222C3008B87CB /* FoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14B0C8200222C3008B87CB /* FoodsTableViewController.swift */; };
+		1C14B0CB20022378008B87CB /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14B0CA20022378008B87CB /* FoodTableViewCell.swift */; };
+		1C14B0CD2002245D008B87CB /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1C14B0CC2002245C008B87CB /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +45,12 @@
 		1C14B09C20021847008B87CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C14B09E20021847008B87CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C14B0A320021847008B87CB /* SeafoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeafoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C14B0A720021847008B87CB /* SeafoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeafoodTests.swift; sourceTree = "<group>"; };
-		1C14B0A920021847008B87CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C14B0AE20021847008B87CB /* SeafoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeafoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C14B0B220021847008B87CB /* SeafoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeafoodUITests.swift; sourceTree = "<group>"; };
-		1C14B0B420021847008B87CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C14B0C0200218D9008B87CB /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		1C14B0C620022149008B87CB /* AddFoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodTableViewController.swift; sourceTree = "<group>"; };
+		1C14B0C8200222C3008B87CB /* FoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsTableViewController.swift; sourceTree = "<group>"; };
+		1C14B0CA20022378008B87CB /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		1C14B0CC2002245C008B87CB /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				1C14B09120021846008B87CB /* Seafood */,
-				1C14B0A620021847008B87CB /* SeafoodTests */,
-				1C14B0B120021847008B87CB /* SeafoodUITests */,
 				1C14B09020021846008B87CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,29 +102,16 @@
 				1C14B09220021846008B87CB /* AppDelegate.swift */,
 				1C14B09420021846008B87CB /* ViewController.swift */,
 				1C14B09620021847008B87CB /* Main.storyboard */,
+				1C14B0CA20022378008B87CB /* FoodTableViewCell.swift */,
+				1C14B0C8200222C3008B87CB /* FoodsTableViewController.swift */,
+				1C14B0CC2002245C008B87CB /* Inceptionv3.mlmodel */,
 				1C14B09920021847008B87CB /* Assets.xcassets */,
 				1C14B09B20021847008B87CB /* LaunchScreen.storyboard */,
 				1C14B09E20021847008B87CB /* Info.plist */,
+				1C14B0C620022149008B87CB /* AddFoodTableViewController.swift */,
+				1C14B0C0200218D9008B87CB /* Food.swift */,
 			);
 			path = Seafood;
-			sourceTree = "<group>";
-		};
-		1C14B0A620021847008B87CB /* SeafoodTests */ = {
-			isa = PBXGroup;
-			children = (
-				1C14B0A720021847008B87CB /* SeafoodTests.swift */,
-				1C14B0A920021847008B87CB /* Info.plist */,
-			);
-			path = SeafoodTests;
-			sourceTree = "<group>";
-		};
-		1C14B0B120021847008B87CB /* SeafoodUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1C14B0B220021847008B87CB /* SeafoodUITests.swift */,
-				1C14B0B420021847008B87CB /* Info.plist */,
-			);
-			path = SeafoodUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +250,11 @@
 			files = (
 				1C14B09520021846008B87CB /* ViewController.swift in Sources */,
 				1C14B09320021846008B87CB /* AppDelegate.swift in Sources */,
+				1C14B0C720022149008B87CB /* AddFoodTableViewController.swift in Sources */,
+				1C14B0C9200222C3008B87CB /* FoodsTableViewController.swift in Sources */,
+				1C14B0C1200218D9008B87CB /* Food.swift in Sources */,
+				1C14B0CB20022378008B87CB /* FoodTableViewCell.swift in Sources */,
+				1C14B0CD2002245D008B87CB /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C14B0A820021847008B87CB /* SeafoodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C14B0B320021847008B87CB /* SeafoodUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +422,7 @@
 				DEVELOPMENT_TEAM = TTT3G6UK73;
 				INFOPLIST_FILE = Seafood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Yotta.Seafood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexshih.Seafood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,7 +437,7 @@
 				DEVELOPMENT_TEAM = TTT3G6UK73;
 				INFOPLIST_FILE = Seafood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Yotta.Seafood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexshih.Seafood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
