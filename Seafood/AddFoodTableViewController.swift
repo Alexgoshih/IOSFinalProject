@@ -22,14 +22,11 @@ class AddFoodTableViewController: UITableViewController, UIImagePickerController
     
     @IBAction func changePhotoButtonPressed(_ sender: Any) {
         
-        if !UIImagePickerController.isSourceTypeAvailable(.camera) {
-            return
-        }
-        
-        let controller = UIImagePickerController()
-        controller.delegate = self
-        controller.sourceType = .camera
-        present(controller, animated: true, completion: nil)
+        let picker = UIImagePickerController()
+        picker.allowsEditing = false
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+        present(picker, animated: true)
         
     }
     var food: Food!

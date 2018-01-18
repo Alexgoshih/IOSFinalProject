@@ -41,7 +41,7 @@ struct Food: Codable {
             let url = Food.documentsDirectory.appendingPathComponent(imageName)
             return UIImage(contentsOfFile: url.path)
         } else {
-            return  #imageLiteral(resourceName: "head")
+            return #imageLiteral(resourceName: "food.png")
         }
     }
 }
